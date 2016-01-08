@@ -11,26 +11,6 @@
   width: 80%;
 }
 
-/*basic info*/
-.portfolioimage {
-  margin: 20px;
-  padding: 10px;
-}
-
-.portfolioimage p{
-  color: green;
-  padding-left: 4px;
-}
-
-.portfolioimage img {
-  float: left;
-  height:auto;
-  max-width: 20%;
-  padding: 10px;
-  margin: 10px;
-  display: box;
-}
-
 /************ Project List *************/
 body.projectlist {
   text-align: justify;
@@ -77,3 +57,10 @@ h3, a{
 
 
 /************ About Me *************/
+img {
+  float: left;
+  max-width: 20%;
+  max-height: auto;
+  border-radius: 50%;
+  margin: 15px;
+]}
