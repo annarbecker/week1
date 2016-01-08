@@ -6,11 +6,16 @@
   background: transparent;
 }
 
+
 /************ Page Content Container *************/
 .container {
   width: 90%;
 }
 
+.container h3 {
+  font-weight: lighter;
+  font-size: 50px;
+}
 /************ Project List *************/
 body.projectlist {
   text-align: justify;
@@ -23,12 +28,12 @@ h3, a{
 }
 
 .glyphicon {
-  font-size: 3em;
+  font-size: 70px;
   color: white;
 }
 
 .col-sm-1 {
-   margin-right: 10px;
+   margin-right: 30px;
  }
 
 .projectlist {
@@ -86,6 +91,11 @@ img {
   padding: 15px;
 }
 
+.highlight {
+  color: #00cca3;
+  font-weight: bold;
+  font-size: 16px;
+}
 /************ Hobbies *************/
 .hobbies {
   background-color: #00ffcc;
