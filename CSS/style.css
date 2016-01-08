@@ -8,7 +8,7 @@
 
 /************ Page Content Container *************/
 .container {
-  width: 80%;
+  width: 90%;
 }
 
 /************ Project List *************/
@@ -33,7 +33,8 @@ h3, a{
 
 .projectlist {
   background-color: #00ffcc;
-  padding: 50px;
+  padding: 20px;
+  margin-bottom: 10px;
 }
 
 .projectlist h3{
@@ -47,7 +48,7 @@ h3, a{
 .projectlist p {
   background-color: white;
   margin: 0px;
-  padding: 10px;
+  padding: 15px;
 }
 
 .projectlist a:hover {
@@ -65,34 +66,44 @@ img {
   margin: 15px;
 }
 
-body.aboutme {
+.aboutme {
   text-align: justify;
 }
 
-.glyphicon {
-  font-size: 3em;
-  color: white;
-}
-
-.col-sm-1 {
-   margin-right: 10px;
- }
-
 .aboutme {
   background-color: #00ffcc;
-  padding: 50px;
+  padding: 20px;
+  margin-bottom: 10px;
 }
 
 .aboutme h3{
   color: white;
 }
 
-.aboutme ol{
-  background-color: white;
-}
-
 .aboutme p {
   background-color: white;
   margin: 0px;
-  padding: 10px;
+  padding: 15px;
+}
+
+/************ Hobbies *************/
+.hobbies {
+  background-color: #00ffcc;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.hobbies h3{
+  color: white;
+}
+
+.hobbies p {
+  background-color: white;
+  margin: 0px;
+  padding: 15px;
+}
+
+ol {
+  background-color: white;
+  padding-bottom: 15px;
 }
