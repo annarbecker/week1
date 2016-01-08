@@ -1,9 +1,8 @@
 /************ Page Header *************/
 .jumbotron {
-  text-align:center;
-  color: white;
-  background-color:  #00ffcc;
-  font-family: 'Poiret One', sans-serif;
-  padding-top: 1px;
-  font-weight: bold;
+  text-align: center;
+}
+
+h1 {
+  color: blue;
 }
