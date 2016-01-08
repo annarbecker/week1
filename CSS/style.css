@@ -9,7 +9,7 @@
 }
 
 /************ Profile Image *************/
-.portfolioimage img {
+.jumbotron img {
   border-radius: 50%;
   height: auto;
   width: 25%;
