@@ -1,4 +1,4 @@
-/************ Header  with Profile Image*************/
+/************ Header *************/
 .jumbotron {
   text-align: center;
   height: 200px;
@@ -16,6 +16,8 @@
   font-weight: lighter;
   font-size: 50px;
 }
+
+
 /************ Project List *************/
 body.projectlist {
   text-align: justify;
@@ -96,6 +98,8 @@ img {
   font-weight: bold;
   font-size: 16px;
 }
+
+
 /************ Hobbies *************/
 .hobbies {
   background-color: #00ffcc;
