@@ -6,6 +6,10 @@
   background: transparent;
 }
 
+.navbar-brand {
+  font-weight: lighter;
+}
+
 
 /************ Page Content Container *************/
 .container {
