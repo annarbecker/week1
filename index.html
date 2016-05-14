@@ -5,24 +5,30 @@
     <link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
     <meta charset="utf-8">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
     <title>Portfolio | Anna Becker</title>
   </head>
   <body>
 
-  <div class="navbar navbar-inverse navbar-fixed-top">
+  <div class="navbar navbar-fixed-top">
    <a class="navbar-brand text-muted" href="#aboutme">About Me</a>
    <a class="navbar-brand text-muted" href="#android">Android</a>
    <a class="navbar-brand text-muted" href="#js">JavaScript</a>
    <a class="navbar-brand text-muted" href="#java">Java</a>
    <a class="navbar-brand text-muted" href="#intro">Intro</a>
 
+   <ul class="nav navbar-nav navbar-right">
+      <li><a class="navbar-brand text-muted" href="https://github.com/annarbecker"><img src="img/github.png" alt="github" id="github"></a></li>
+     <li><a class="navbar-brand text-muted" href="https://www.linkedin.com/profile/preview?locale=en_US&trk=prof-0-sb-preview-primary-button"><img src="img/linked-in.png" alt="linkedIn" id="linkedIn"></a></li>
+   </ul>
+
+
  </div>
 
 <!-- Header-->
-    <div class="jumbotron">
-      <div class="container" id="header"></div>
-        <h1>Anna Becker </h1>
-        <p>Junior Developer</p>
+    <div id="header">
+      <h1>Anna Becker </h1>
+      <p>Junior Developer</p>
     </div>
 
 <!-- Page Content Container -->
@@ -35,11 +41,11 @@
             <b class="glyphicon glyphicon-user"></b>
           </div>
           <div class="col-sm-5">
-            <h3>About Me</h3>
+            <h3>about me</h3>
           </div>
         </div>
         <p>
-          <img src="img/anna.jpg" alt="Anna Becker">
+          <img src="img/anna.jpg" alt="Anna Becker" id="profliePic">
             As a Portland native, I grew up in the city and after high school graduation was ready for a change of scenery. In the fall of 2008, I found myself in Gambier, Ohio as a freshman at Kenyon College. During my time at Kenyon I received a BA in Sociology with a minor in French.
             <br></br>
             After graduation, and four years of miserable Ohio winters, I moved back to Portland. After graduation I began volunteering at a local nonprofit dedicated to the academic success and lifelong health of Portland’s underserved youth through tennis and education. After my first day of volunteering I was extremely impressed with the organization's mission, impact, and staff. I continued to volunteer throughout the summer of 2012 and in late August was hired on.
@@ -55,136 +61,142 @@
       </div>
 
     <!-- Project list -->
-        <div class="projectlist">
-            <div class="row">
-              <div class="col-sm-1">
-                <b class="glyphicon glyphicon-folder-open"></b>
-              </div>
-              <div class="col-sm-2">
-                <h3>Projects</h3>
-              </div>
-            </div>
-          <p id="intro">
-            <strong>Intro to Programming</strong>
-          </p>
-            <ul>
-              <li><a href="http://annarbecker.github.io/week2/">Destination Vacation</a></li>
-                <p>
-                  This project is for Week 2 Code Review for the Epicodus Intro to Programming class. This project presents the user with a quiz that will provide them with vacation destination options based on their inputs or responses. This project is an exercise in HTML, CSS, Bootstrap, JavaScript, and jQuery.
-                </p>
-              <li><a href="http://annarbecker.github.io/week3/">Ping Pong</a></li>
-                <p>
-                  This project is for Week 3 Code Review for the Epicodus Intro to Programming class. This project is an exercise in HTML, CSS, Bootstrap, JavaScript, and jQuery. This project asks the user to enter a number greater than or equal to 1. When the number is submitted Ping Pong will count up to the number from 1 with the following exceptions:
-                  <ul>
-                    <li>Numbers divisible by 3 become "ping"</li>
-                    <li>Numbers divisible by 5 become "pong"</li>
-                    <li>Numbers divisible by 15 become "pingpong"</li>
-                  </ul>
-                </p>
-              <li><a href="http://annarbecker.github.io/week4/">Pizza Pronto</a></li>
-                <p>
-                  This project is for Week 4 Code Review for the Epicodus Intro to Programming class. This project is a website for a pizza company where a user can order a pizza and see the final cost. This project is an exercise in HTML, CSS, Bootstrap, JavaScript, and jQuery.
-                </p>
-              <li><a href="http://tcsuder.github.io/RecReRate/">RecReRate</a></li>
-                <p>
-                  This is the Week 5 final project for Epicodus Intro To Programming. The intention of this project is to demonstrate proficiency in Behavior Driven Development and Object Oriented Programming. Members of the group also learned to better implement github repositories as well as working on a project as a team (i.e. discovery, work flow, delegation, etc.).
-                </p>
-            </ul>
-
-          <p id="java"><strong>Java</strong></p>
-            <ul>
-              <li><a href="https://github.com/annarbecker/word-puzzle-java.git">Word Puzzle</a></li>
-                <p>
-                  A website that uses a method to replace vowels in a string with the dash symbol "-" to create a word puzzle to solve. This project is an exercise in Java, Spark, Junit, Velocity, Fluentlenium, Bootstrap, HTML, and CSS.
-                </p>
-            <li><a href="https://github.com/annarbecker/hair-salon-java.git">Hair Salon</a></li>
-                <p>
-                  A web application for a hair salon. The owner can add to a list of stylists, and for each stylist, add clients who see that stylist. The stylists work independently, so each client only belongs to a single stylist. This project is an exercise in Java, Spark, Junit, Velocity, Fluentlenium, Bootstrap, and Postgres.
-                </p>
-            <li><a href="https://github.com/annarbecker/band-venues_java.git">Band Venues</a></li>
-                <p>
-                  A web application to track bands and the venues where they've played concerts. This project is an exercise in Java, Spark, Junit, Velocity, Fluentlenium, Bootstrap, and Postgres.
-                </p>
-            <li><a href="https://github.com/annarbecker/dictionary-java.git">Dictionary</a></li>
-                <p>
-                  A program that lets users create a dictionary. The homepage of the app lists out all of the words, and lets you click on them to view all of their definitions. A user can add a word, and when viewing a word, can add one or more definitions. This project is an exercise in Java, Spark, Junit, Velocity, Fluentlenium, Bootstrap, HTML, and CSS.
-                </p>
-              <li><a href="https://github.com/Rosanio/java_game-website.git">Game Site</a></li>
-                <p>
-                  This is a game "arcade" using Java, Postgres, Spark, Gradle, and Velocity Template Engine. Games include Simon, Memory, and Tamagotchi.
-                </p>
-            </ul>
-
-            <p id="js"><strong>Javascript</strong></p>
-              <ul>
-                <li><a href="https://github.com/annarbecker/github_api.git">$git repos</a></li>
-                  <p>
-                    A website where the user can enter a GitHub username into a form and submit it to see names and descriptions of that person's public repositories. This project is an exercise in JavaScript, jQuery, Gulp, Bower, SCSS, and moment.js.
-                  </p>
-              <li><a href="https://github.com/annarbecker/food-log.git">Food Log</a></li>
-                  <p>
-                    A website where the user can log each food that they eat with some details about the meal and the number of calories for that portion. This project is an exercise in Angular2 Javascript, Gulp, Bower, and TypeScript.
-                  </p>
-              <li><a href="https://github.com/annarbecker/question-answer.git">Question Answer</a></li>
-                  <p>
-                    A question and answer message board where a user submits a question and other users can respond with answers. This project is an exercise in Ember JavaScript, node.js, and Bower.
-                  </p>
-              <li><a href="https://github.com/annarbecker/dictionary-java.git">Baar &amp; KegsList</a></li>
-                  <p>
-                    An Angular app that a bar can use to keep track of their kegs. This project is an exercise in Angular2 Javascript, Gulp, Bower, and TypeScript.
-                  </p>
-                <li><a href="https://github.com/annarbecker/picacause.git">Pic A Cause</a></li>
-                  <p>
-                    A charity fundraising site where users can submit or purchase photos to support featured charities. This project is an excercise in Angular2 Javascript, Gulp, Bower, TypeScript, and SASS.
-                  </p>
-              </ul>
-              <p id="android"><strong>Android</strong></p>
-                <ul>
-                  <li><a href="https://github.com/annarbecker/word-puzzle-java.git">Word Puzzle</a></li>
-                    <p>
-                      A website that uses a method to replace vowels in a string with the dash symbol "-" to create a word puzzle to solve. This project is an exercise in Java, Spark, Junit, Velocity, Fluentlenium, Bootstrap, HTML, and CSS.
-                    </p>
-                <li><a href="https://github.com/annarbecker/hair-salon-java.git">Hair Salon</a></li>
-                    <p>
-                      A web application for a hair salon. The owner can add to a list of stylists, and for each stylist, add clients who see that stylist. The stylists work independently, so each client only belongs to a single stylist. This project is an exercise in Java, Spark, Junit, Velocity, Fluentlenium, Bootstrap, and Postgres.
-                    </p>
-                <li><a href="https://github.com/annarbecker/band-venues_java.git">Band Venues</a></li>
-                    <p>
-                      A web application to track bands and the venues where they've played concerts. This project is an exercise in Java, Spark, Junit, Velocity, Fluentlenium, Bootstrap, and Postgres.
-                    </p>
-                <li><a href="https://github.com/annarbecker/dictionary-java.git">Dictionary</a></li>
-                    <p>
-                      A program that lets users create a dictionary. The homepage of the app lists out all of the words, and lets you click on them to view all of their definitions. A user can add a word, and when viewing a word, can add one or more definitions. This project is an exercise in Java, Spark, Junit, Velocity, Fluentlenium, Bootstrap, HTML, and CSS.
-                    </p>
-                  <li><a href="https://github.com/Rosanio/java_game-website.git">Game Site</a></li>
-                    <p>
-                      This is a game "arcade" using Java, Postgres, Spark, Gradle, and Velocity Template Engine. Games include Simon, Memory, and Tamagotchi.
-                    </p>
-                </ul>
-        </div>
-
-        <!-- Hobbies -->
-          <div class="hobbies" id="hobbies">
-            <div class="row">
-              <div class="col-sm-1">
-                <b class="glyphicon glyphicon-sunglasses"></b>
-              </div>
-              <div class="col-sm-3">
-                <h3>Hobbies</h3>
-              </div>
-            </div>
-                <p>
-                  When I'm not in school I enjoy:
-                </p>
-                  <ol>
-                    <li>Playing tennis</li>
-                    <li>Cooking</li>
-                    <li>Cycling</li>
-                    <li>Reading</li>
-                    <li>Hiking</li>
-                    <li>Being with family and friends</li>
-                  </ol>
+    <div class="projectlist" id="android">
+        <div class="row">
+          <div class="col-sm-1">
+            <b class="glyphicon glyphicon-folder-open"></b>
           </div>
+          <div class="col-sm-2">
+            <h3>Android</h3>
+          </div>
+        </div>
+          <ul>
+            <br>
+            <li><a href="https://github.com/annarbecker/SociaLite.git">SociaLite</a></li>
+              <p>
+                Android Independent Project for Epicodus Android course - Social Event Organization App. Users can organize and share events with friends. This project is an exercise in Java, Android Studio, ButterKnife, Firebase, Robolectric and Espresso for testing.
+              </p>
+            <li><a href="https://github.com/annarbecker/WhatsAppening.git">WhatsAppening</a></li>
+              <p>
+                This is an Epicodus project to build an instant messaging form. Users can log in using firebase email authentication. Users can then select other users to chat with. They can view sent and received messages in the chat room. This project is an exercise in Java, Android Studio, ButterKnife, and Firebase.
+              </p>
+            <li><a href="https://github.com/annarbecker/Kloutulator.git">Kloutulator</a></li>
+              <p>
+                App that finds a user via twitter and returns their Klout score and using Klout API. This is an Epicodus project for practicing Android development concepts. This project is an exercise in Java, Android Studio, ButterKnife, and Firebase.
+              </p>
+            <li><a href="https://github.com/annarbecker/FilmExplorer.git">Film Explorer</a></li>
+              <p>
+                A movie app in Android that allows users to search for movies by title, rating, and release date. This is an Epicodus project for practicing Android development concepts. This project is an exercise in Java, Android Studio, ButterKnife, The Movie Database API, and Firebase.
+              </p>
+            <li><a href="https://github.com/Rosanio/java_game-website.git">My Restaurants</a></li>
+              <p>
+                This is an Epicodus project for practicing Android development concepts. Users can search for restaurants by zip code and add restaurants to their saved restaurants list. This project is an exercise in Java, Android Studio, ButterKnife, Yelp, Firebase, and Robolectric and Espresso for testing.
+              </p>
+          </ul>
       </div>
+
+      <div class="projectlist" id="js">
+        <div class="row">
+          <div class="col-sm-1">
+            <b class="glyphicon glyphicon-folder-open"></b>
+          </div>
+          <div class="col-sm-2">
+            <h3>JavaScript</h3>
+          </div>
+        </div>
+          <ul>
+            <br>
+            <li><a href="https://github.com/annarbecker/github_api.git">$git repos</a></li>
+              <p>
+                A website where the user can enter a GitHub username into a form and submit it to see names and descriptions of that person's public repositories. This project is an exercise in JavaScript, jQuery, Gulp, Bower, SCSS, and moment.js.
+              </p>
+            <li><a href="https://github.com/annarbecker/food-log.git">Food Log</a></li>
+              <p>
+                A website where the user can log each food that they eat with some details about the meal and the number of calories for that portion. This project is an exercise in Angular2 Javascript, Gulp, Bower, and TypeScript.
+              </p>
+            <li><a href="https://github.com/annarbecker/question-answer.git">Question Answer</a></li>
+              <p>
+                A question and answer message board where a user submits a question and other users can respond with answers. This project is an exercise in Ember JavaScript, node.js, and Bower.
+              </p>
+            <li><a href="https://github.com/annarbecker/dictionary-java.git">Baar &amp; KegsList</a></li>
+              <p>
+                An Angular app that a bar can use to keep track of their kegs. This project is an exercise in Angular2 Javascript, Gulp, Bower, and TypeScript.
+              </p>
+            <li><a href="https://github.com/annarbecker/picacause.git">Pic A Cause</a></li>
+              <p>
+                A charity fundraising site where users can submit or purchase photos to support featured charities. This project is an excercise in Angular2 Javascript, Gulp, Bower, TypeScript, and SASS.
+              </p>
+          </ul>
+      </div>
+
+      <div class="projectlist"  id="java">
+        <div class="row">
+          <div class="col-sm-1">
+            <b class="glyphicon glyphicon-folder-open"></b>
+          </div>
+          <div class="col-sm-2">
+            <h3>Java</h3>
+          </div>
+        </div>
+          <ul>
+            <br>
+            <li><a href="https://github.com/annarbecker/word-puzzle-java.git">Word Puzzle</a></li>
+              <p>
+                A website that uses a method to replace vowels in a string with the dash symbol "-" to create a word puzzle to solve. This project is an exercise in Java, Spark, Junit, Velocity, Fluentlenium, Bootstrap, HTML, and CSS.
+              </p>
+            <li><a href="https://github.com/annarbecker/hair-salon-java.git">Hair Salon</a></li>
+              <p>
+                A web application for a hair salon. The owner can add to a list of stylists, and for each stylist, add clients who see that stylist. The stylists work independently, so each client only belongs to a single stylist. This project is an exercise in Java, Spark, Junit, Velocity, Fluentlenium, Bootstrap, and Postgres.
+              </p>
+            <li><a href="https://github.com/annarbecker/band-venues_java.git">Band Venues</a></li>
+              <p>
+                A web application to track bands and the venues where they've played concerts. This project is an exercise in Java, Spark, Junit, Velocity, Fluentlenium, Bootstrap, and Postgres.
+              </p>
+            <li><a href="https://github.com/annarbecker/dictionary-java.git">Dictionary</a></li>
+              <p>
+                A program that lets users create a dictionary. The homepage of the app lists out all of the words, and lets you click on them to view all of their definitions. A user can add a word, and when viewing a word, can add one or more definitions. This project is an exercise in Java, Spark, Junit, Velocity, Fluentlenium, Bootstrap, HTML, and CSS.
+              </p>
+            <li><a href="https://github.com/Rosanio/java_game-website.git">Game Site</a></li>
+              <p>
+                This is a game "arcade" using Java, Postgres, Spark, Gradle, and Velocity Template Engine. Games include Simon, Memory, and Tamagotchi.
+              </p>
+          </ul>
+      </div>
+
+      <div class="projectlist"  id="intro">
+        <div class="row">
+          <div class="col-sm-1">
+            <b class="glyphicon glyphicon-folder-open"></b>
+          </div>
+          <div class="col-sm-9">
+            <h3>Intro to Programming</h3>
+          </div>
+        </div>
+        <ul>
+          <br>
+          <li><a href="http://annarbecker.github.io/week2/">Destination Vacation</a></li>
+            <p>
+              This project is for Week 2 Code Review for the Epicodus Intro to Programming class. This project presents the user with a quiz that will provide them with vacation destination options based on their inputs or responses. This project is an exercise in HTML, CSS, Bootstrap, JavaScript, and jQuery.
+            </p>
+          <li><a href="http://annarbecker.github.io/week3/">Ping Pong</a></li>
+            <p>
+              This project is for Week 3 Code Review for the Epicodus Intro to Programming class. This project is an exercise in HTML, CSS, Bootstrap, JavaScript, and jQuery. This project asks the user to enter a number greater than or equal to 1. When the number is submitted Ping Pong will count up to the number from 1 with the following exceptions:
+              <ul>
+                <li>Numbers divisible by 3 become "ping"</li>
+                <li>Numbers divisible by 5 become "pong"</li>
+                <li>Numbers divisible by 15 become "pingpong"</li>
+              </ul>
+            </p>
+          <li><a href="http://annarbecker.github.io/week4/">Pizza Pronto</a></li>
+            <p>
+              This project is for Week 4 Code Review for the Epicodus Intro to Programming class. This project is a website for a pizza company where a user can order a pizza and see the final cost. This project is an exercise in HTML, CSS, Bootstrap, JavaScript, and jQuery.
+            </p>
+          <li><a href="http://tcsuder.github.io/RecReRate/">RecReRate</a></li>
+            <p>
+              This is the Week 5 final project for Epicodus Intro To Programming. The intention of this project is to demonstrate proficiency in Behavior Driven Development and Object Oriented Programming. Members of the group also learned to better implement github repositories as well as working on a project as a team (i.e. discovery, work flow, delegation, etc.).
+            </p>
+        </ul>
+      </div>
+    </div>
   </body>
 </html>

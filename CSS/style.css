@@ -1,13 +1,66 @@
 /************ Header *************/
-.jumbotron {
-  text-align: center;
-  height: 200px;
-  width: auto;
-  background: transparent;
+.navbar {
+  font-weight: lighter;
+  background: #ABA46A;
 }
 
-.navbar-brand {
+.navbar a {
+  color: #FFFFFF;
   font-weight: lighter;
+  text-transform: lowercase;
+}
+
+div.navbar.navbar-fixed-top {
+  border: #514E5F;
+}
+
+#linkedIn {
+  border-radius: 5px;
+  margin-right: 20px;
+  -webkit-filter: invert(1);
+   filter: invert(1);
+}
+
+#github {
+  border-radius: 5px;
+  -webkit-filter: invert(1);
+   filter: invert(1);
+}
+
+a.navbar-brand.text-muted:hover {
+   background: #514E5F;
+   color: white;
+}
+
+body {
+  background-image: url("../img/stardust.png");
+}
+
+.container {
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  padding: 10px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  width: 75%;
+}
+
+#header {
+  margin-top: 75px;
+  margin-bottom: 35px;
+  font-family: 'Open Sans', sans-serif;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+#header h1 {
+  font-size: 50px;
+  font-weight: 300;
+}
+
+#header p {
+  font-size: 25px;
+  font-weight: 300;
 }
 
 
@@ -17,59 +70,58 @@
 }
 
 .container h3 {
-  font-weight: lighter;
-  font-size: 50px;
+  font-weight: 300;
+  font-size: 30px;
 }
 
-
 /************ Project List *************/
-body.projectlist {
+body .projectlist {
   text-align: justify;
 }
 
-h3, a{
-  text-transform: uppercase;
+.projectlist a {
+  color: #ABA46A;
   text-align: left;
   font-weight: bold;
 }
 
 .glyphicon {
-  font-size: 70px;
-  color: white;
+  font-size: 50px;
+  color: #FFFFFF;
 }
 
-.col-sm-1 {
-   margin-right: 30px;
- }
-
 .projectlist {
-  background-color: #00ffcc;
+  background-color: #514E5F;
   padding: 20px;
   margin-bottom: 10px;
+  border-radius: 5px;
 }
 
 .projectlist h3{
-  color: white;
+  color: #FFFFFF;
+  font-weight: 300;
+  text-transform: lowercase;
 }
 
 .projectlist ul{
-  background-color: white;
+  background-color: #FFFFFF;
 }
 
 .projectlist p {
-  background-color: white;
+  background-color: #FFFFFF;
   margin: 0px;
   padding: 15px;
 }
 
 .projectlist a:hover {
+  color:  #514E5F;
+  text-decoration: none;
   font-weight: bold;
-  color: #00cca3;
 }
 
 
 /************ About Me *************/
-img {
+#profliePic{
   float: left;
   max-width: 20%;
   max-height: auto;
@@ -82,46 +134,19 @@ img {
 }
 
 .aboutme {
-  background-color: #00ffcc;
+  background-color: #514E5F;
   padding: 20px;
   margin-bottom: 10px;
+  border-radius: 5px;
 }
 
 .aboutme h3{
-  color: white;
+  color: #FFFFFF;
+  font-weight: 300;
 }
 
 .aboutme p {
-  background-color: white;
+  background-color: #FFFFFF;
   margin: 0px;
   padding: 15px;
-}
-
-.highlight {
-  color: #00cca3;
-  font-weight: bold;
-  font-size: 16px;
-}
-
-
-/************ Hobbies *************/
-.hobbies {
-  background-color: #00ffcc;
-  padding: 20px;
-  margin-bottom: 10px;
-}
-
-.hobbies h3{
-  color: white;
-}
-
-.hobbies p {
-  background-color: white;
-  margin: 0px;
-  padding: 15px;
-}
-
-ol {
-  background-color: white;
-  padding-bottom: 15px;
 }
